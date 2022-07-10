@@ -9,3 +9,5 @@ for (const event of readdirSync("./events")) client.on(event.split(".")[0], requ
 
 client.login("BOT_TOKEN") 
 
+//Example code
+
