@@ -7,5 +7,5 @@ require("dotenv").config()
 client.commands = new Collection(readdirSync("./commands").map(cmd => (cmd = require(`./commands/${cmd}`), [cmd.data.name, cmd])))
 for (const event of readdirSync("./events")) client.on(event.split(".")[0], require(`./events/${event}`).bind(null))
 
-client.login("OTkzODk0NzcyODA2NzgzMTc2.GY7Mwa.EmDhu3sAQw9XAYyFbQj8xsNwtyBx9R3sSkoRo8") // client.login(BOT_TOKEN)
+client.login("BOT_TOKEN") 
 
